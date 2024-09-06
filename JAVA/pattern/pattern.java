@@ -18,9 +18,9 @@ public static void main(String args[])
      }
     else 
     {
-        int temp = c ;
+        int tp = c ;
 
-        for (int j = c +i -1 ; j >= temp ; --j) 
+        for (int j = c +i -1 ; j >= tp ; --j) 
         {
             System.out.print(" "+j);
             
