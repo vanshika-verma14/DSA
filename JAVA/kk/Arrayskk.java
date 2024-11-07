@@ -49,6 +49,6 @@ public static void main(String[] args) {
         System.out.println("Arr is - " + i + " "); // here i represents element of the array (do not write arr4[i])
     }
      //method 3 to print   
-     System.out.println(Arrays.toString(arr1));
+     System.out.println(Arrays.toString(arr1)) ;
 }
 }
