@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class funcparameters {
+public class func1parameters {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter your name: ");
