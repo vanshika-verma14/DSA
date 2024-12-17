@@ -7,7 +7,7 @@ public static void main(String[] args) {
     //syntax
     // datatype[] variable_name = new datatype[size];
     int[] arr0 = new int[5];
-    
+
     //or directly
     int[] arr2 = {1, 2, 3, 4, 5};
     
@@ -15,9 +15,19 @@ public static void main(String[] args) {
     String[] arr3 = new String[4];
     System.out.println(arr3[0]);   //null
     //null - is not like a keyword but a special literal of null type which we can assign to any reference type(non-primitive data types) but we cannot use to declare it like
-    //int a = null;   // errror
+    //int a = null;   // errror to primitive data type
     // any reference variable will automatically have null value
     //we cannot write null as NULL or 0 as in C programming because null is a literal and keywords are case-sensitive in Java.
+    
+    int[] a = null;
+    // int a = null; //error
+    String[] arr9 = null;
+    System.out.println(arr9);
+    int[] arr10 = new int[5];
+    System.out.println("output is = " + arr10[2]);
+    // int a ;  //primitive datatype needs to be initialised first before printung they do not take null or 0 value itself
+    // System.out.println(a); //error
+
 
     Scanner sc = new Scanner(System.in);
     int n = sc.nextInt();
