@@ -14,10 +14,8 @@ public class BS6_SmallestLetter_leet{
 
           if(n < arr[mid])
           end = mid -1;
-
           else
-          start = mid +1;
-          
+          start = mid +1; 
         }
         return arr[start % arr.length];
     }
