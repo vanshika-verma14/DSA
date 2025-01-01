@@ -19,7 +19,7 @@ public class BS1_Binary_search {
           start = mid +1;
           
           else 
-          return mid;
+          return mid ;
         }
         return -1;
     }
