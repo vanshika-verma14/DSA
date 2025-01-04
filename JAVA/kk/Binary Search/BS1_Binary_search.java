@@ -11,13 +11,10 @@ public class BS1_Binary_search {
         int end = arr.length - 1;
         while(start <= end) {
          int mid  = start + (end-start)/2;
-
           if(n < arr[mid])
           end = mid -1;
-
-          else if (n > arr[mid])
+       else if (n > arr[mid])
           start = mid +1;
-          
           else 
           return mid ;
         }
