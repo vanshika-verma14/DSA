@@ -16,7 +16,6 @@ public class BS7 {
 
           else 
             start = mid + 1;
-          
         }
         return start;
     }
