@@ -6,6 +6,7 @@ public class BS5_First_Last_Position_of_Element{
         System.out.println(Arrays.toString(check(arr, target)));
     
     }
+    
     public static int[] check(int[] nums, int target) {
 
         int[] ans = {-1, -1};

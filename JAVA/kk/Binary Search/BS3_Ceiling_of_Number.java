@@ -1,17 +1,14 @@
 public class BS3_Ceiling_of_Number {
     public static void main(String[] args) {
                 int[] arr = {2, 3, 5, 9, 14, 16, 18 };
-                int target = 1;
+                int target = 10;
                 int ans = binSearch(arr, target);
                 System.out.println(ans);
             }
-        
             static int  binSearch(int[] arr , int n){
-
                 if(n > arr[arr.length-1]){
                     return -1;
                 }
-
                 int start = 0;
                 int end = arr.length - 1;
                 while(start <= end) {
