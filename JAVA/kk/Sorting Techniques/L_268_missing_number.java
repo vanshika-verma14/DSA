@@ -13,15 +13,10 @@ public class L_268_missing_number {
         int i = 0;
         while(i < nums.length){
         int correct_index = nums[i]; 
-        // if(correct_index > nums.length -1  )
-        // correct_index -= 1;
-        if(nums[i]== nums.length)
-        i++;
-        else if(nums[i] != nums[correct_index]  ){ 
+         if(nums[i] != nums[correct_index]  ){ 
         swap(nums , i , correct_index); 
          System.out.println(Arrays.toString(nums));
-        }
-         
+        }  
         else 
         i++;
     }
