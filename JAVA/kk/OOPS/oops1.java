@@ -15,13 +15,26 @@ public class oops1 {
         String[] name = new String[5];
         float[] marks = new float[5];
  
-        Student[] students = new Student[5]; //Declares an array to store five Student objects. Initially, all elements in this array are null
-        System.out.println(Arrays.toString(students)); //[null, null, null, null, null]
+        Student[] stndss = new Student[5]; //Declares an array to store five Student objects. Initially, all elements in this array are null
+        System.out.println(Arrays.toString(stndss)); //[null, null, null, null, null]
+        // Why Student[] Works?
+        // Student[] is not a primitive data type but a valid reference type:
         
-        Student stu1; // just declaring reference to an object ,it means that stu1 is creted in stack memory of Student
-         //System.out.println(stu); //since stu1 is not initialised yet it will give error message
+        // When you create a class (class Student), it automatically becomes a valid type that can be used for:
+        // Declaring variables (Student s;).
+        // Creating arrays (Student[] students).
+        // In this case, Student[] is an array of references to Student objects.
+        // This works similarly to how you would declare and initialize an array of primitive types like int[].
+        
+        
+        Student stu1; // just declaring reference to an object, it means that stu1 is creted in stack memory of Student
+         //System.out.println(stu1); //since stu1 is not initialised yet it will give error message
         stu1 = new Student();  // initialising object
         System.out.println("stu1- "+ stu1);
+        // Student stu1; - Declares a reference variable stu1 for the Student object. This does not allocate memory for an object yet.
+        // stu1 = new Student(); - Allocates memory and initializes the stu1 object using the no-argument constructor.
+
+
 
         Student kunal = new Student(15, "Kunal Kushwaha", 85.4f);
         Student rahul = new Student(18, "Rahul Rana", 90.3f); 
