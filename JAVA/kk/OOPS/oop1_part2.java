@@ -1,11 +1,7 @@
-import java.sql.Struct;
-import java.util.ArrayList;
-import java.util.Arrays;
+
 public class oop1_part2 {
   
     public static void main(String[] args) {
-       
-        
         Student stu1; // just declaring reference to an object, it means that stu1 is creted in stack memory of Student
          //System.out.println(stu1); //since stu1 is not initialised yet it will give error message
         stu1 = new Student();  // initialising object
@@ -32,7 +28,8 @@ public class oop1_part2 {
         System.out.println("PRINT 2a- " +rahul.name);
         System.out.println("PRINT 3a- " +rahul.marks);
 
-         kunal.changeName("kiansh");
+        kunal.changeName("kiansh"); //object can call a method
+        kunal.name = "kk"; //object can directly call the variable to assign the value
         kunal.greeting();
     }}
 class Student {
