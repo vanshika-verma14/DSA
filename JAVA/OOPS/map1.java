@@ -2,11 +2,12 @@
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class map1 {
     public static void main(String[] args) {
         HashMap<Integer,String> map1 = new HashMap<>();
-        map1.put(1, "vanshika");
+        map1.put(4, "vanshika");
         map1.put(2, "verma");
         map1.put(3, "vanshika");
         System.out.println(map1); //{1=vanshika, 2=verma, 3=vanshika}
@@ -73,6 +74,16 @@ public class map1 {
             System.out.println(entry.getKey() + " → " + entry.getValue());
         }
 
+        Set<Map.Entry<String,String>> entry1 = map.entrySet();  //You're storing the result of map.entrySet() inside a Set of entries.
+        for(Map.Entry<String,String> i : entry1){
+            i.setValue(i.getValue().toUpperCase());
+        }
+        System.out.println(map);
+        // Set → It’s a collection that holds unique values.
+        // Map.Entry<K, V> → This is a type that stores one key and one value.
+        // For example, Map.Entry<String, String> stores something like "fruit" → "apple".
+        
+
         // 14. size()
         System.out.println("Total entries: " + map.size()); // 3
 
@@ -84,6 +95,8 @@ public class map1 {
         System.out.println("After clear: " + map); // {}
         System.out.println("Is map now empty? " + map.isEmpty()); // true
 
+
+        }
 
     }
     
