@@ -26,7 +26,8 @@ public class FilterInputStreamSkipExample {
                     }
                     return -1; // End of stream
                 }
-            };
+            }
+            ;
 
             int byteRead;
             // Read from the filtered input stream and print characters one by one
