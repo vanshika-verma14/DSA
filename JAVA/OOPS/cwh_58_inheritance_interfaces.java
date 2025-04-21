@@ -1,5 +1,7 @@
 //Interfaces can extend other interfaces as shown below :
 //Note: Remember that interface cannot implement another interface only classes can do that!
+
+// Yes, an interface can extend another interface in Java. 
 interface interf1{
     void meth1();
     void meth2();
