@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class ArrayListmethods {
+public class Arrylist1 {
     public static void main(String[] args) {
 
         // 1. Creating an ArrayList to store names of students
