@@ -21,7 +21,7 @@ public class WrapperClassDemo {
         // Convert a numeric string to an int
         String numericStr = "123" ;
         int convertedInt = Integer.parseInt(numericStr);
-        System.out.println("String to int using parseInt: " + convertedInt);
+        System.out.println("String to int using parseInt: "+ convertedInt) ;
 
         // String to Double conversion using parseDouble
         String priceStr = "99.99";
