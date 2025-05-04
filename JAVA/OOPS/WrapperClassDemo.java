@@ -19,7 +19,7 @@ public class WrapperClassDemo {
         System.out.println("Manually unboxed int: " + extractedInt);
 
         // Convert a numeric string to an int
-        String numericStr = "123";
+        String numericStr = "123" ;
         int convertedInt = Integer.parseInt(numericStr);
         System.out.println("String to int using parseInt: " + convertedInt);
 
@@ -27,11 +27,9 @@ public class WrapperClassDemo {
         String priceStr = "99.99";
         Double price = Double.parseDouble(priceStr);
         System.out.println("String to Double: " + price);
-
         // Demonstrating autoboxing
         Integer autoWrapped = 50; // automatic int to Integer conversion
         System.out.println("Autoboxed Integer value: " + autoWrapped);
-
         // Demonstrating auto-unboxing
         int autoUnwrapped = autoWrapped; // automatic Integer to int conversion
         System.out.println("Auto-unboxed int value: " + autoUnwrapped);
