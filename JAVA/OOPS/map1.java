@@ -22,85 +22,86 @@ public class map1 {
         
 
         // Creating a HashMap
-        Map<String, String> map = new HashMap<>();
+        Map<String, String> mmap = new HashMap<>();
 
         // 1. put(K, V) - adds key-value pair
-        map.put("India", "Delhi");
-        map.put("USA", "Washington");
-        map.put("UK", "London");
-        map.put("Japan", "Tokyo");
+        mmap.put("India", "Delhi");
+        mmap.put("USA", "Washington");
+        mmap.put("UK", "London");
+        mmap.put("Japan", "Tokyo");
 
         // 2. putIfAbsent(K, V) - only puts if key is absent
-        map.putIfAbsent("India", "New Delhi");  // Won't overwrite
-        map.putIfAbsent("Germany", "Berlin");
+        mmap.putIfAbsent("India", "New Delhi");  // Won't overwrite
+        mmap.putIfAbsent("Germany", "Berlin");
 
         // 3. get(Object key)
-        System.out.println("Capital of India: " + map.get("India")); // Delhi
+        System.out.println("Capital of India: " + mmap.get("India")); // Delhi
 
         // 4. getOrDefault(Object key, V defaultVal)
-        System.out.println("Capital of France: " + map.getOrDefault("France", "Not Found")); // Not Found
+        System.out.println("Capital of France: " + mmap.getOrDefault("France", "Not Found")); // Not Found
 
         // 5. containsKey(Object key)
-        System.out.println("Has UK? " + map.containsKey("UK")); // true
+        System.out.println("Has UK? " + mmap.containsKey("UK")); // true
 
         // 6. containsValue(Object value)
-        System.out.println("Has Tokyo as a capital? " + map.containsValue("Tokyo")); // true
+        System.out.println("Has Tokyo as a capital? " + mmap.containsValue("Tokyo")); // true
 
         // 7. remove(Object key)
-        map.remove("Japan");
-        System.out.println("After removing Japan: " + map); // Japan removed
+        mmap.remove("Japan");
+        System.out.println("After removing Japan: " + mmap); // Japan removed
 
         // 8. remove(Object key, Object value)
-        boolean removed = map.remove("USA", "Washington"); // true
+        boolean removed = mmap.remove("USA", "Washington"); // true
+        System.out.println(mmap);
         System.out.println("USA removed? " + removed);     // true
 
         // 9. replace(K key, V value)
-        map.replace("UK", "Manchester");
-        System.out.println("Replaced UK's capital: " + map.get("UK")); // Manchester
+        mmap.replace("UK", "Manchester");
+        System.out.println("Replaced UK's capital: " + mmap.get("UK")); // Manchester
 
         // 10. replace(K key, V oldValue, V newValue)
-        boolean replaced = map.replace("UK", "Manchester", "London");
+        boolean replaced = mmap.replace("UK", "Manchester", "London");
         System.out.println("UK replaced conditionally? " + replaced); // true
 
         // 11. keySet() - returns all keys
-        System.out.println("All countries: " + map.keySet()); // [India, UK, Germany]
+        System.out.println("All countries: " + mmap.keySet()); // [India, UK, Germany]
 
         // 12. values() - returns all values
-        System.out.println("All capitals: " + map.values()); // [Delhi, London, Berlin]
+        System.out.println("All capitals: " + mmap.values()); // [Delhi, London, Berlin]
 
         // 13. entrySet() - returns Set of Map.Entry
         System.out.println("Country-Capital pairs:");
-        for (Map.Entry<String, String> entry : map.entrySet()) {
-            System.out.println(entry.getKey() + " → " + entry.getValue());
+        for (Map.Entry<String, String> entry : mmap.entrySet()) {
+            System.out.println(entry.getKey() + " -  " + entry.getValue());
         }
 
-        Set<Map.Entry<String,String>> entry1 = map.entrySet();  //You're storing the result of map.entrySet() inside a Set of entries.
+        Set<Map.Entry<String,String>> entry1 = mmap.entrySet();  //You're storing the result of map.entrySet() inside a Set of entries.
         for(Map.Entry<String,String> i : entry1){
             i.setValue(i.getValue().toUpperCase());
         }
-        System.out.println(map);
+        System.out.println(mmap);
         // Set → It’s a collection that holds unique values.
         // Map.Entry<K, V> → This is a type that stores one key and one value.
         // For example, Map.Entry<String, String> stores something like "fruit" → "apple".
         
 
         // 14. size()
-        System.out.println("Total entries: " + map.size()); // 3
+        System.out.println("Total entries: " + mmap.size()); // 3
 
         // 15. isEmpty()
-        System.out.println("Is map empty? " + map.isEmpty()); // false
+        System.out.println("Is map empty? " + mmap.isEmpty()); // false
 
         // 16. clear()
-        map.clear();
-        System.out.println("After clear: " + map); // {}
-        System.out.println("Is map now empty? " + map.isEmpty()); // true
+        mmap.clear();
+        System.out.println("After clear: " + mmap); // {}
+        System.out.println("Is map now empty? " + mmap.isEmpty()); // true
 
 
         }
 
     }
     
-}
+
 
 // Full Method List Used
 // Method	Description
