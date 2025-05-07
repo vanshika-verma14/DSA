@@ -12,5 +12,5 @@ this.setResizable(false); //no longer resize frame
 // ImageIcon img = new ImageIcon(); //
 // this.setIconImage(img.getImage());
 
-this.getContentPane().setBackground(new Color(123,16,171));
+this.getContentPane().setBackground(new Color(220,216,215));
 }}
