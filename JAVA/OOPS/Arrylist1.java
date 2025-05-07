@@ -59,7 +59,7 @@ public class Arrylist1 {
         ArrayList<String> newStudents = new ArrayList<>();
         newStudents.add("Tanvi");
         newStudents.add("Ankit");
-        stud.addAll(newStudents);
+        stud.addAll(1,newStudents);
         System.out.println("After adding all from new list: " + stud);
 
         // 15. Sorting the list using Collections.sort()
