@@ -14,7 +14,6 @@
 // Priority Methods In Java :
 // setPriority():
 // This method is used to set the priority of a thread. IllegalArgumentException is thrown if the priority given by the user is out of the range [1,10].
-
 // getPriority():
 // This method is used to display the priority of a given thread.
 
