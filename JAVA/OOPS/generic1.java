@@ -42,7 +42,8 @@ class box1<T>{
 
 }
 
-public class generic1 {
+public class generic1 
+{
     public static void main(String[] args) {
         box ob = new box();
         ob.setValue(12);
