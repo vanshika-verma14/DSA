@@ -48,7 +48,7 @@ public class generic1
         box ob = new box();
         ob.setValue(12);
         int i = (Integer) ob.getValue();
-        System.out.println(i);
+        System.out.println(i) ;
 
         box1<Integer> ob1 = new box1<>();
         ob1.setValue(123);
