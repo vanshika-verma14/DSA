@@ -53,7 +53,7 @@ public class generic1
         box1<Integer> ob1 = new box1<>();
         ob1.setValue(123);
         // int ii = ob1.getValue(); //now we dont have to specify the type
-        System.out.println((Integer) ob1.getValue());
+        System.out.println((Integer) ob1.getValue()) ;
 
         box1<String> ob2 = new box1<>();
         ob2.setValue("mumma");
