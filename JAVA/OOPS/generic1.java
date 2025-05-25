@@ -39,9 +39,7 @@ class box1<T>{
     public V getvalue(){
         return value;
     }
-
 }
-
 public class generic1 
 {
     public static void main(String[] args) {
