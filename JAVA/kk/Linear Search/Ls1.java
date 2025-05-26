@@ -1,6 +1,4 @@
 
-
-
 public class Ls1 {
     public static void main(String[] args) {
         int[] arr = {22,4,6,42,81,37,42};

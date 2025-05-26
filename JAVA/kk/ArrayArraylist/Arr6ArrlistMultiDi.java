@@ -4,7 +4,7 @@ public class Arr6ArrlistMultiDi {
     public static void main(String[] args) {
         ArrayList<ArrayList<Integer>> arr = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
-        // initialise
+        // initialise imp
         for (int i = 0; i < 3; i++) {
             arr.add(new ArrayList<>());
             
