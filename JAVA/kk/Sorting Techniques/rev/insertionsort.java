@@ -1,8 +1,9 @@
+package rev;
 
 import java.util.Arrays;
 
-public class bubblesort {
-   public static void main(String[] args) {
+public class insertionsort {
+    public static void main(String[] args) {
     int[] arr = {5,4,3,2,1};
         bubble(arr);
         System.out.println(Arrays.toString(arr));
@@ -24,5 +25,4 @@ public class bubblesort {
             break;
         }
         return arr;
-   } 
 }
