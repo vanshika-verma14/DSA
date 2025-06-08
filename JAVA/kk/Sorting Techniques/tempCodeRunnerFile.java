@@ -1,2 +1,2 @@
-  // if(!swap)
-                // break;
+c++;
+          System.out.println(c);

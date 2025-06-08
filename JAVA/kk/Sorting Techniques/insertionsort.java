@@ -3,17 +3,17 @@ import java.util.Arrays;
 
 public class insertionsort {
      public static void main(String[] args) {
-        int[] arr = {1,2,3,6,5,6};
-        ins(arr);
-        System.out.println(Arrays.toString(arr));
+        int[] nums = {1,2,3,6,5,6};
+        // ins(nums);
+        System.out.println(Arrays.toString( ins(nums)));
     }
-    public static int[] ins(int[] arr) {
+    public static int[] ins(int[] nums) {
         
-        for (int i = 0; i < arr.length-1; i++) {
+        for (int i = 0; i < nums.length-1; i++) {
             for (int j = i+1; j >=0; j--) {
                 //System.out.println(i +" " + j);
-                if(arr[j] < arr[j-1]){
-                   swap(arr, j, j-1);
+                if(nums[j] < nums[j-1]){
+                   swap(nums, j, j-1);
                 }
                  else
                     {break;}
@@ -22,13 +22,13 @@ public class insertionsort {
 
             }
             // System.out.println(i );
-            return arr;
+            return nums;
         }
 
-public static void swap(int[] arr, int i, int j) {
-     int temp = arr[i];
-     arr[i] = arr[j];
-     arr[j] = temp;
+public static void swap(int[] nums, int i, int j) {
+     int temp = nums[i];
+     nums[i] = nums[j];
+     nums[j] = temp;
 
 }
 }
