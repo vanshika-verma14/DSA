@@ -1,0 +1,1 @@
+sec!= Integer.MIN_VALUE || sec==max)
