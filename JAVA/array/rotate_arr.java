@@ -4,9 +4,9 @@ public class rotate_arr {
     public static void main(String[] args) {
         int[] arr ={1,2,3,4,5,6,7};
         int k =3;
-        System.out.println(Arrays.toString(rotate(arr, k)));
+        System.out.println(Arrays.toString(brrotate1(arr, k)));
     }
-    public static int[] rotate(int[] nums , int k){
+    public static int[] brrotate1(int[] nums , int k){
         if(k==0||k==nums.length)
         return nums;
         else
@@ -23,5 +23,7 @@ public class rotate_arr {
         }
         return nums;
     }
+    
+
     }
 
