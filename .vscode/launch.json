@@ -1,0 +1,38 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "sort_bubble_selection",
+      "request": "launch",
+      "mainClass": "sort_bubble_selection",
+      "projectName": "DSA_b2122d8c"
+    },
+    {
+      "type": "java",
+      "name": "vid_23_num",
+      "request": "launch",
+      "mainClass": "vid_23_num",
+      "projectName": "DSA_b2122d8c"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/ayush/OneDrive/Documents/DSA/JAVA/Striver",
+      "program": "c:/Users/ayush/OneDrive/Documents/DSA/JAVA/Striver/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

@@ -2,16 +2,29 @@ import java.util.Arrays;
 
 public class binarysearch {
     public static void main(String[] args) {
-         int[] arr = {1,3,5,7,8,9,11,11,11,11,11};
-         
+         int[] a = {1,3,5,7,8,9,11};
+
+         //binary search 
+         System.out.println(bs(a,111, 0, a.length-1));
+
+         int[] crr = {8,9,11,1,3,5,7};
+         System.out.println(rbs(a,11, 0, a.length-1));
+
+         //binary search all index
+          int[] arr = {1,3,5,7,8,9,11,11,11,11,11};
          int[]  brr = new int[2];
          brr[0]= bsall(arr,11, 0, arr.length-1,true,-1);
          if(brr[0]!=-1)
           brr[1]= bsall(arr,11, 0, arr.length-1,false,-1);
           else brr[1]=-1;
         System.out.println(Arrays.toString(brr));
-        // System.out.println(bs(arr,111, 0, arr.length-1));
+       
     }
+    public static char[] rbs(int[] a, int i, int j, int k) {
+
+
+    }
+    
     public static int bs(int[] arr, int tar, int s, int e) {
       if(s>e)
       return -1;
@@ -45,7 +58,9 @@ public class binarysearch {
          return  bsall( arr,  tar , mid+1, e,fl,ans);
 
         }
-      
-    }  
+    } 
+    
+    public static int rbs(int[] arr, int tar, int s, int e) {
+    
 
 }

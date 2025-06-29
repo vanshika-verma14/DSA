@@ -8,8 +8,7 @@ public class max_one {
         int c= 0;
         int max =0;
         int i =0;
-   s
-    while(i<nums.length){
+  while(i<nums.length){
             if(nums[i]==1){
                 c++;
                 i++;
