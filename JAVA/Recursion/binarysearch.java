@@ -42,7 +42,6 @@ public class binarysearch {
     public static int bsall(int[] arr, int tar, int s, int e, boolean fl, int ans) {
       if(s>e)
       return ans;
-
       int mid = s + (e-s)/2;
 
       if(arr[mid]> tar)
