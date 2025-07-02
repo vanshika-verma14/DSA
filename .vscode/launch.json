@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SubsequenceReturn",
+      "request": "launch",
+      "mainClass": "SubsequenceReturn",
+      "projectName": "DSA_b2122d8c"
+    },
+    {
+      "type": "java",
       "name": "sort_bubble_selection",
       "request": "launch",
       "mainClass": "sort_bubble_selection",
