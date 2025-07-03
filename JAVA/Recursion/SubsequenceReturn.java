@@ -17,7 +17,6 @@ public class SubsequenceReturn {
         left.addAll(right);
         return left;
     }
-
     public static void main(String[] args) {
         String input = "abc";
         ArrayList<String> result = subseqRet("", input);
