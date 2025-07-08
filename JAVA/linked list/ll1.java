@@ -25,8 +25,9 @@
         this.next = null; // even if we write this line or not it will take next as null itself
         }
     }
-      
-    //insert 
+    
+    //INSERT
+    //insert from start
     public void insertfirst(int val){
         Node node = new Node(val);
            node.next = head;
@@ -38,6 +39,8 @@
 
         size+=1;
     }
+
+    //insert from end if nothing mention use end insertion
      public void insertlast(int val){      
            if(tail==null){
             insertfirst(val);
@@ -62,7 +65,7 @@
        temp.next= node;
     //    node.next = temp.next; // if we use Node node = new Node(val); then only val constructor is caleld and we have to do these 2 steps below 
     //    temp.next = node;
-       
+       size+=1;
     }
     //display
      public void display(){
@@ -73,6 +76,19 @@
         }
         System.out.println("null");
     }
+
+    //DELETE
+    //delete from start
+     public int del(){ 
+        int v = head.val;
+        head = head.next;
+        if(head== tail){
+            tail =null;
+        }
+        size-=1;
+       return v;
+    }
+
    public static void main(String[] args) {
     LL1 first = new LL1();
     // first.insertfirst(2);
@@ -80,11 +96,14 @@
     // first.insertfirst(4);
 
     first.insertlast(2);
-    first.insertlast(3);
-     first.insertfirst(1);
-     first.insertlast(5);
-    first.insertmid(3,4);
-    first.insertmid(4,9);
+    // first.insertlast(3);
+    //  first.insertfirst(1);
+    //  first.insertlast(5);
+    // first.insertmid(3,4);
+    // first.insertmid(4,9);
+        first.display();
+
+    System.out.println(first.del());
 
     first.display();
    }
