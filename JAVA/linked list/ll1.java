@@ -86,7 +86,6 @@
             tail =null;
         }
         size-=1; 
-        
        return v;
     }
 
