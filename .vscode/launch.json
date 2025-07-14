@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "bs",
+      "request": "launch",
+      "mainClass": "bs",
+      "projectName": "DSA_b2122d8c"
+    },
+    {
+      "type": "java",
       "name": "LL1",
       "request": "launch",
       "mainClass": "LL1",
