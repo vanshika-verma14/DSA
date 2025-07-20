@@ -24,6 +24,6 @@ public class bs {
             System.out.println("else  " + arr[mid]);
             }
     }
-    return arr[start];
+  return arr[start];
    }
 }
