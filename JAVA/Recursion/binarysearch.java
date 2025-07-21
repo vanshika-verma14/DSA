@@ -20,10 +20,6 @@ public class binarysearch {
         System.out.println(Arrays.toString(brr));
        
     }
-    public static char[] rbs(int[] a, int i, int j, int k) {
-
-
-    }
     
     public static int bs(int[] arr, int tar, int s, int e) {
       if(s>e)
@@ -39,27 +35,27 @@ public class binarysearch {
         return  bs( arr,  tar , mid+1, e);
       
     }
-    public static int bsall(int[] arr, int tar, int s, int e, boolean fl, int ans) {
-      if(s>e)
+    public static int bsall(int[] arr, int tar, int start, int end, boolean fl, int ans) {
+      if(start>end)
       return ans;
-      int mid = s + (e-s)/2;
+      int mid = start + (end-start)/2;
 
       if(arr[mid]> tar)
-        return  bsall( arr,  tar , s, mid-1,fl,ans);
+        return  bsall( arr,  tar , start, mid-1,fl,ans);
       else if (arr[mid]< tar)
-        return  bsall( arr,  tar , mid+1, e,fl,ans);
+        return  bsall( arr,  tar , mid+1, end,fl,ans);
 
       else
         {ans = mid;
          if(fl==true)
-         return  bsall( arr,  tar , s, mid-1,fl,ans);
+         return  bsall( arr,  tar , start, mid-1,fl,ans);
          else
-         return  bsall( arr,  tar , mid+1, e,fl,ans);
+         return  bsall( arr,  tar , mid+1, end,fl,ans);
 
         }
     } 
     
-    public static int rbs(int[] arr, int tar, int s, int e) {
-    
+    // public static int rbs(int[] arr, int tar, int s, int e) {
+    // }
 
 }

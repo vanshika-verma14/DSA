@@ -1,1 +1,0 @@
-ArrayList<String> left =
