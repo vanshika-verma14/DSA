@@ -14,7 +14,6 @@
      private class Node{
         int val;
         Node next;
-
         public Node(int val, Node next){//next as a parameter is best when you're building chains quickly or recursively.
             this.val = val;
             this.next = next;
