@@ -18,7 +18,6 @@
             this.val = val;
             this.next = next;
         }
-
         public Node(int val) { //next = null is best when you create nodes one by one.
         this.val = val;
         this.next = null; // even if we write this line or not it will take next as null itself
