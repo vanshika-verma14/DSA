@@ -44,6 +44,7 @@
             insertfirst(val);
             return; // return isliye karre hn taki neeche ki condition na run ho is step ke baad vrna same value 2 baar list m jaegi ek baar yahan or ek baar neeche compulsory steps m se but return krne pr vo neech ke steps ni execute karega
            }
+
         Node node = new Node(val);
         tail.next = node;
         tail=node;
@@ -105,4 +106,4 @@
 
     first.display();
    }
-}
+ }
