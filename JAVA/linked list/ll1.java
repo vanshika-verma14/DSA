@@ -88,6 +88,43 @@
        return v;
     }
 
+    // del from end
+    public int delend(){
+        int v = tail.val;
+        if (size <= 1) {
+            return del();
+        }
+    Node seclast = get(size - 2);
+    seclast.next = null;
+    tail = seclast;
+    size--;
+    return v;
+    }
+    // del from mid
+    public int delmid(int index){
+        if (index == 0) {
+            return del();
+        }
+        if (index == size - 1) {
+            return delend();
+        }
+        Node temp = get (size-2);
+        int v = temp.next.val;
+        temp.next = temp.next.next;
+
+    size--;
+    return v;
+    }
+
+    public Node get(int n ){
+        Node temp = head;
+        for (int i = 0; i < n; i++) {
+            temp = temp.next;
+        }
+        return temp;
+    }
+
+
    public static void main(String[] args) {
     LL1 first = new LL1();
     // first.insertfirst(2);
