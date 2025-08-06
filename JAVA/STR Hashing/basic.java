@@ -19,6 +19,5 @@ public class basic {
                 System.out.println(i+ " = " + fcn[i] );
             }
         }
-
     }
 }
