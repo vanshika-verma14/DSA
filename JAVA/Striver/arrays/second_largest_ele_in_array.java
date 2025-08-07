@@ -1,3 +1,4 @@
+package arrays;
 //tc = O(N)
 public class second_largest_ele_in_array {
     public static void main(String[] args) {

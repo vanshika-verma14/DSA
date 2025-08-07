@@ -1,8 +1,9 @@
+package arrays;
 import java.util.Arrays;
 
 public class check_duplicates {
     public static void main(String[] args) {
-    int[] a = {1};
+    int[] a = {1,1,2,2,2,2,3,3,3,3,3};
     System.out.println(check(a));
 }
     public static int check(int[] nums) {

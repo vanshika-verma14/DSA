@@ -1,3 +1,4 @@
+package arrays;
 //optimal rotate right by k places
 
 import java.util.Arrays;

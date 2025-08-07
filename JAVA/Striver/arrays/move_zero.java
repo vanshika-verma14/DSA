@@ -1,3 +1,4 @@
+package arrays;
 public class move_zero {
     public static void main(String[] args) {
         int[] arr = {9,9,5,9,6,0,3,0,0,2};

@@ -1,3 +1,4 @@
+package arrays;
 import java.util.Arrays;
 
 public class v1_duplicate_in_sorted_arr {
