@@ -1,9 +1,9 @@
 
 public class Longest_subarray_sum {
     public static void main(String[] args) {
-        int[] arr = {-5, 8, -14, 2, 4, 12};
-        int k =  5;
-        System.out.println(brsubarray(arr , k));
+        int[] arr = {1,2,3,1,1,1,1,2,3,3,1,1,1,1,1,1};
+        int k =  6;
+        System.out.println(opsubarray(arr , k));
     }
     public static int brsubarray(int[] arr , int k){  
 
@@ -20,7 +20,6 @@ public class Longest_subarray_sum {
      }
      return max;
     }
-
     public static int btsubarray(int[] arr , int k){  
 
      //better - hashmap
@@ -28,12 +27,29 @@ public class Longest_subarray_sum {
      return max;
      
     }
-
+    
     public static int opsubarray(int[] arr , int k){  
+     //optimal - sliding window, but it works only for positive num not even for 0 
 
-     //optimal
-     int max= 0;
-     return max;
-     
+     int maxl=0;
+     int c=0; // to find total no. of subarrays
+     int start=0;
+     int sum =0;
+     int end=0;
+     while(end<arr.length){
+        sum+=arr[end];
+      
+        while(sum >k && start<= end){
+          sum-=arr[start];
+          start++;
+        }
+        if(sum == k){
+            c++;
+            maxl= Math.max(maxl, end-start+1);
+        }
+          end++;
+     }
+     System.out.println(c);
+     return maxl;
     }
 }
