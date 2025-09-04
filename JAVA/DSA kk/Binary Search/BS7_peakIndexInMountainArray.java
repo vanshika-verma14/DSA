@@ -1,4 +1,4 @@
-public class BS7 {
+public class BS7_peakIndexInMountainArray {
     public static void main(String[] args) {
         int[] arr = {0,10,5,2};
         System.out.println(peakIndexInMountainArray( arr));
