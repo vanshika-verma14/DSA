@@ -2,7 +2,10 @@
 // So:
 // ✅ Node → class name
 // ✅ next → variable (reference to another object of the same type)
- public class LL1 {
+
+import org.w3c.dom.Node;
+
+public class LL1 {
      Node head;
      Node tail;
      int size;
@@ -14,10 +17,12 @@
      private class Node{
         int val;
         Node next;
+
         public Node(int val, Node next){//next as a parameter is best when you're building chains quickly or recursively.
             this.val = val;
             this.next = next;
         }
+
         public Node(int val) { //next = null is best when you create nodes one by one.
         this.val = val;
         this.next = null; // even if we write this line or not it will take next as null itself
@@ -66,15 +71,6 @@
     //    temp.next = node;
        size+=1;
     }
-    //display
-     public void display(){
-        Node temp = head;
-        while(temp!=null){
-            System.out.print(temp.val + " -> ");
-            temp = temp.next;
-        }
-        System.out.println("null");
-    }
 
     //DELETE
     //delete from start
@@ -116,6 +112,17 @@
     return v;
     }
 
+    //display
+     public void display(){
+        Node temp = head;
+        while(temp!=null){
+            System.out.print(temp.val + " -> ");
+            temp = temp.next;
+        }
+        System.out.println("null");
+    }
+
+
     public Node get(int n ){
         Node temp = head;
         for (int i = 0; i < n; i++) {
@@ -124,23 +131,77 @@
         return temp;
     }
 
+    //KK VID AMAZON GOOGLE QUES -
+    //REMOVE DUPLICATES FROM SORTED LL
+     public Node deleteDuplicates(Node head) {
+        Node node = head;
+        if(node ==null)
+        return node;
+        else{
+            while(node.next!=null){
+                if(node.val==node.next.val){
+                    node.next = node.next.next;
+                }
+                else
+                node = node.next; 
+            }
+        }
+        return head;
+    }
+    
+    //Linked list cycle leet -141
+    public boolean hasCycle(Node head) {
+        Node s = head;
+        Node f = head;
+        while(f!=null && f.next!=null){
+            s= s.next;
+            f= f.next.next;
+            if(s==f)
+            return true;
+        }
+        
+        return false;
+    }
 
+      //Linked list cycle length 
+      public int hasCycle(Node head) {
+        Node s = head;
+        Node f = head;
+        int c = 0;
+        while(f!=null && f.next!=null){
+            s= s.next;
+            f= f.next.next;
+            if(s==f){
+                do{
+                    f= f.next;
+                    c++;
+                }while(f!=s);
+                return c;
+            }
+            
+        }
+        return 0;
+    }
    public static void main(String[] args) {
-    LL1 first = new LL1();
+    LL1 firstll = new LL1();
     // first.insertfirst(2);
     // first.insertfirst(3);
     // first.insertfirst(4);
-
-    first.insertlast(2);
     // first.insertlast(3);
     //  first.insertfirst(1);
     //  first.insertlast(5);
     // first.insertmid(3,4);
     // first.insertmid(4,9);
-        first.display();
+    
+    firstll.insertlast(1);
+    firstll.insertlast(1);
+    firstll.insertlast(2);
+    firstll.insertlast(3);
+    firstll.display();
 
-    System.out.println(first.del());
+    //System.out.println(first.del());
+   firstll.head = firstll.deleteDuplicates(firstll.head);
 
-    first.display();
+    firstll.display();
    }
  }
