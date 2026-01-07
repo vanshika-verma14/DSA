@@ -1,3 +1,7 @@
+import java.util.LinkedList;
+
+import org.w3c.dom.Node;
+
 public class cycle {
 
     // Node class
@@ -67,6 +71,26 @@ public class cycle {
             System.out.println("No cycle detected.");
             return false;
         }
+        // length of the cycle
+         //Linked list cycle length 
+      public int Cyclelength(Node head) {
+        Node s = head;
+        Node f = head;
+        int c = 0;
+        while(f!=null && f.next!=null){
+            s= s.next;
+            f= f.next.next;
+            if(s==f){
+                do{
+                    f= f.next;
+                    c++;
+                }while(f!=s);
+                return c;
+            }
+            
+        }
+        return 0;
+    }
 
         // Display (only safe for non-cyclic lists)
         public void display() {
@@ -97,5 +121,6 @@ public class cycle {
 
         // Detect cycle using Tortoise–Hare method
         list.detectCycle();
+        System.out.println(list.Cyclelength(list.head));
     }
 }
